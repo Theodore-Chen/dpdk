@@ -142,6 +142,7 @@ source_file_deps = {
     'test_pflock.c': [],
     'test_pie.c': ['sched'],
     'test_pmd_perf.c': ['ethdev', 'net'] + packet_burst_generator_deps,
+    'test_pmd_loop.c': ['net_loop', 'ethdev', 'bus_vdev'],
     'test_pmd_ring.c': ['net_ring', 'ethdev', 'bus_vdev'],
     'test_pmd_ring_perf.c': ['ethdev', 'net_ring', 'bus_vdev'],
     'test_pmu.c': ['pmu'],
